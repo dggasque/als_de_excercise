@@ -44,5 +44,5 @@ dates = pd.to_datetime(final['create_dt'], infer_datetime_format=True).dt.date
 date_counts = dates.value_counts(sort=False).rename_axis('acquisition_date').reset_index(name='acquisition')
 
 # Save dattaframes as csv files in current working directory
-final.to_csv('people.csv', na_rep='NaN', header=True, index=False)
+final.to_csv('people.csv', header=True, index=False)
 date_counts.to_csv('acquisition_facts.csv', header=True, index=False)
