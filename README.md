@@ -26,6 +26,3 @@ It will save the two output csv files to the working directory.
 I made the assumption that the `updated_dt` value was refering to the `modified_dt` column from the `con.csv` file. However, each of the three files had a `modified_dt` column that held different dates.
 
 Some of the `modified_dt` values precede the `created_dt` and will need to be cleaned.
-
-I have kept the original formating for missing values. They are designated by a 'NaN' string.
-
